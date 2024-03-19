@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponto Extra</title>
+    <script src="calculadora.js"></script>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .result {
+            width: 10px;
+            height: 10px;
+            border: 1px solid black;
+            padding: 20px 100px;
+        }
+
+        .button{
+            display: block;
+        }
+
+        input{
+            padding: 30px;
+        }
+        .calc {
+            margin-left: 100px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .visor{
+            background-color: rgb(215, 215, 215);
+            margin: 10px;
+            width: 20%
+        }
+    </style>
+</head>
+<body>
+    <div id="calculadora" class="calc">
+        <input type="text" id="result" class="visor" disabled>
+        <div class="primeirafileira">
+            
+            <input type="button" value="1" onclick="appendToResult(1)">
+            <input type="button" value="2" onclick="appendToResult(2)">
+            <input type="button" value="3" onclick="appendToResult(3)">
+            
+        </div>
+        <div class="segundafileira">
+            <input type="button" value="4" onclick="appendToResult(4)">
+            <input type="button" value="5" onclick="appendToResult(5)">
+            <input type="button" value="6" onclick="appendToResult(6)">
+        </div>
+        
+        <div class="terceirafileira">
+            <input type="button" value="7" onclick="appendToResult(7)">
+            <input type="button" value="8" onclick="appendToResult(8)">
+            <input type="button" value="9" onclick="appendToResult(9)">
+        </div>
+        
+        <div class="quartafileira">
+            <input type="button" value="0" onclick="appendToResult(0)">
+            <input type="button" value="+" onclick="appendToResult('+')">
+            <input type="button" value="-" onclick="appendToResult('-')">
+        </div>
+        
+        <div class="quintafileira">
+            <input type="button" value="*" onclick="appendToResult('*')">
+            <input type="button" value="/" onclick="appendToResult('/')">
+            <input type="button" value="=" onclick="calculateResult()">
+        </div>
+        
+        <input type="button" value="C" onclick="clearResult()">
+    </div>
+</body>
+</html>

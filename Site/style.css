@@ -1,0 +1,256 @@
+/* Reset de Estilos para Remover Margens e Preenchimentos Padrão */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Cor de fundo da tela */
+}
+
+/* Estilos do Container Dividido Verticalmente */
+.split-container {
+    display: flex;
+    height: 100vh; /* A altura da tela inteira */
+}
+
+/* Estilo do Painel Esquerdo */
+.left-panel {
+    background-color: #e0e0e0; /* Cor de fundo do painel esquerdo */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhar conteúdo ao centro horizontalmente */
+    width: 100%; /* Largura de 100% */
+    max-height: 50vh; /* Altura máxima de 50% da altura da tela */
+    margin: 0 auto; /* Centralizar horizontalmente */
+    overflow: auto; /* Adicionar rolagem se o conteúdo exceder a altura máxima */
+}
+
+.centered-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo do Painel Direito */
+.right-panel {
+    flex: 1; /* Ocupa 50% da largura */
+    background-color: #d0d0d0; /* Cor de fundo do painel direito */
+    padding: 20px;
+}
+
+.right-panel img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo da logo vertical */
+.vertical-logo {
+    display: block;
+    margin: 0 auto;
+    transform: rotate(-90deg); /* Gira a imagem 90 graus no sentido anti-horário */
+    transform-origin: center center; /* Define o ponto de rotação no centro da imagem */
+}
+
+/* Estilo do Rodapé */
+/* Estilos do rodapé */
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    padding: 20px; /* Espaçamento interno do rodapé */
+    text-align: center; /* Alinhar o conteúdo ao centro */
+    position: fixed; /* Posição fixa na parte inferior */
+    left: 0; /* Alinhar à esquerda */
+    bottom: 0; /* Alinhar na parte inferior */
+    width: 100%; /* Largura total */
+}
+
+
+/* Estilo para o conteúdo do rodapé */
+.footer-content {
+    max-width: 1200px; /* Largura máxima do conteúdo do rodapé */
+    margin: 0 auto; /* Centralizar o conteúdo horizontalmente */
+    display: flex;
+    justify-content: space-between; /* Espaço entre as seções de conteúdo */
+    flex-wrap: wrap; /* Permite que as seções de conteúdo quebrem para uma nova linha em telas menores */
+}
+
+.contact-info,
+.social-links,
+.copyright {
+    flex: 1; /* Cada seção ocupa uma parte igual do espaço disponível */
+    padding: 20px; /* Espaçamento interno para cada seção */
+}
+
+/* Estilo para o título de seção */
+.contact-info h3,
+.social-links h3,
+.copyright p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para informações de contato */
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para links de redes sociais */
+.social-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links ul li {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #00bcd4; /* Cor ao passar o mouse sobre os links */
+}
+
+/* Estilo dos Botões de Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Alinhar o conteúdo ao centro horizontalmente */
+    display: flex;
+    justify-content: space-between; /* Distribuir o espaço entre os itens */
+}
+
+nav li {
+    flex: 1; /* Cada item ocupa uma parte igual do espaço disponível */
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff; /* Cor do texto nos botões */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efeitos de transição suave para a cor do fundo e do texto */
+    display: inline-block; /* Tornar os links em elementos de bloco */
+    border-radius: 5px; /* Cantos arredondados para os botões */
+    font-family: Arial, sans-serif; /* Alterar a fonte */
+}
+
+nav a:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo da Divisão Vertical */
+.vertical-divider {
+    width: 1px; /* Espessura da divisão */
+    background-color: #ccc; /* Cor da divisão */
+    height: 50vh; /* Altura de 50% da altura da tela */
+    margin: 0 auto; /* Centralizar horizontalmente */
+}
+
+/* Estilo do Rodapé com Imagens */
+.footer-images {
+    display: flex;
+    justify-content: flex-start; /* Alinhar imagens à esquerda */
+    align-items: center; /* Alinhar verticalmente ao centro */
+    padding: 10px; /* Espaçamento interno (opcional) */
+}
+
+.footer-images img {
+    max-width: 100px; /* Largura máxima das imagens */
+    margin-right: 10px; /* Espaçamento entre as imagens (opcional) */
+}
+
+/* Estilo do Grid de Imagens */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
+    gap: 10px; /* Espaçamento entre as imagens (opcional) */
+    padding: 10px; /* Espaçamento interno (opcional) */
+}
+
+/* Estilo das Imagens no Grid */
+.image-container {
+    max-width: 100%; /* Largura máxima dos blocos de imagem */
+    max-height: 200px; /* Altura máxima dos blocos de imagem (ajuste conforme necessário) */
+    overflow: hidden; /* Para ocultar partes da imagem que ultrapassem a altura máxima */
+    border: 1px solid #ccc; /* Borda para destacar os blocos (opcional) */
+}
+
+.image-container img {
+    width: 100%; /* Preencher todo o espaço do bloco */
+    height: 100%; /* Preencher todo o espaço do bloco */
+    object-fit: cover; /* Redimensionar a imagem para preencher o bloco, mantendo a proporção */
+}
+
+/* Estilo das redes sociais no rodapé */
+.social-links {
+    text-align: center; /* Alinhar o conteúdo ao centro horizontalmente */
+}
+
+.social-links h3 {
+    margin-bottom: 10px; /* Espaçamento abaixo do título "Redes Sociais" (opcional) */
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block; /* Exibir as logos em linha */
+    margin-right: 10px; /* Espaçamento entre as logos (opcional) */
+}
+
+.social-links img {
+    max-width: 30px; /* Largura máxima das imagens das redes sociais (ajuste conforme necessário) */
+}
+
+/* Estilos do Rodapé */
+footer {
+    background-color: #1c232d;
+    color: #ffffff;
+    padding: 20px 0;
+    min-height: 80px; /* Altura mínima para preencher a tela */
+    position: relative; /* Adicione position: relative; */
+}
+
+.footer-bar {
+    background-color: #1c232d;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: absolute; /* Altere para position: absolute; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.social-icons {
+    margin-top: 0px; /* Espaçamento entre os ícones e o texto */
+}
+
+.social-icons h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px; /* Espaçamento entre os ícones (opcional) */
+}
+
+.social-icons img {
+    max-width: 30px;
+}
+
+/* Espaço de margem inferior para evitar sobreposição do rodapé */
+.main-content {
+    margin-bottom: 100px; /* Ajuste o valor conforme necessário */
+}

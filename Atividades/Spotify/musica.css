@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    border: 0;
+}
+header img {
+    color: white;
+    align-items: center;
+    height: 100px;
+}   
+
+.topo {
+    text-align: center;
+    background-color: rgb(8, 8, 8)
+}
+
+h2 {
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+#allmusic {
+    margin-top: 5px;
+    font-size: 20px;
+    margin-left: 2px;
+    background-color: black;
+    color:white;
+    border-radius: 2px;
+}
+
+img {
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 100px;
+}
+
+.Linkin {
+    display: flex;
+}
+
+.Linkin h3 {
+    margin-left: 4px;
+    margin-top: 20px;
+    font-size: 15px;
+}
